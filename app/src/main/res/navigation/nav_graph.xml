@@ -7,63 +7,72 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.bipin.shopy.views.splash.SplashFragment"
-        android:label="SplashFragment" >
+        android:label="SplashFragment">
         <action
             android:id="@+id/action_splashFragment_to_landingFragment"
-            app:destination="@id/landingFragment" />
+            app:destination="@id/landingFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/landingFragment"
         android:name="com.bipin.shopy.views.landingPage.LandingFragment"
-        android:label="LandingFragment" >
+        android:label="LandingFragment">
         <action
             android:id="@+id/action_landingFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter" />
         <action
             android:id="@+id/action_landingFragment_to_signupFragment"
-            app:destination="@id/signupFragment" />
+            app:destination="@id/signupFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
         android:name="com.bipin.shopy.views.signup.SignupFragment"
-        android:label="SignupFragment" >
+        android:label="SignupFragment">
         <action
             android:id="@+id/action_signupFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.bipin.shopy.views.login.LoginFragment"
-        android:label="LoginFragment" >
+        android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_signupFragment"
-            app:destination="@id/signupFragment" />
+            app:destination="@id/signupFragment"
+            app:enterAnim="@anim/enter" />
         <action
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
-            app:destination="@id/forgotPasswordFragment" />
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
         android:name="com.bipin.shopy.views.forgotPassword.ForgotPasswordFragment"
-        android:label="ForgotPasswordFragment" >
+        android:label="ForgotPasswordFragment">
         <action
             android:id="@+id/action_forgotPasswordFragment_to_otpVerificationFragment"
-            app:destination="@id/otpVerificationFragment" />
+            app:destination="@id/otpVerificationFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/otpVerificationFragment"
         android:name="com.bipin.shopy.views.otpverification.OtpVerificationFragment"
-        android:label="OtpVerificationFragment" >
+        android:label="OtpVerificationFragment">
         <action
             android:id="@+id/action_otpVerificationFragment_to_newPasswordFragment"
-            app:destination="@id/newPasswordFragment" />
+            app:destination="@id/newPasswordFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
     <fragment
         android:id="@+id/newPasswordFragment"
         android:name="com.bipin.shopy.views.newPassword.NewPasswordFragment"
-        android:label="NewPasswordFragment" >
+        android:label="NewPasswordFragment">
         <action
             android:id="@+id/action_newPasswordFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/enter" />
     </fragment>
 </navigation>
