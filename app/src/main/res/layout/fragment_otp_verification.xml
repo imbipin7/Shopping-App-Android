@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.bipin.shopy.views.otpverification.OtpVerificationVM" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.otpverification.OtpVerificationFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{vm::onClick}"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/recovery_code"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvEnterOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/enter_otp_sent_to_654_8545_652"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clToolbar" />
+
+
+        <com.mukesh.mukeshotpview.mukeshOtpView.MukeshOtpView
+            android:id="@+id/customOtpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="start"
+            android:inputType="number"
+            android:itemBackground="@drawable/otp_round_corners"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_20sdp"
+            app:itemCount="4"
+            app:itemHeight="@dimen/_50sdp"
+            app:itemSpacing="@dimen/_10sdp"
+            app:itemWidth="@dimen/_60sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEnterOtp"
+            app:state_filled="true" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:onClick="@{vm::onClick}"
+            android:text="@string/didn_t_receive_an_otp_resend_otp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/customOtpView" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:backgroundTint="@color/app_color"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="@{vm::onClick}"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/app_color"
+            app:strokeWidth="@dimen/_1sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity(), NavigationListener, OnUpdateListener {
         lateinit var activity: MainActivity
         var navListener: NavigationListener? = null
         var updateListener: OnUpdateListener? = null
-        var authToken: String? = null
     }
     @Inject
     lateinit var dataStoreUtil: DataStoreUtil

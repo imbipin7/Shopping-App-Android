@@ -11,4 +11,8 @@
     
     <color name="unfocused_bg">#D5DDE0</color>
     <color name="category_bg">#331151FB</color>
+    <color name="text_black">#3E4958</color>
+    <color name="mText_color">#3E4958</color>
+    <color name="grey_bg">#F7F8F9</color>
+    <color name="grey_stroke_bg">#D5DDE0</color>
 </resources>

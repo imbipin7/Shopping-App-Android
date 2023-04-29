@@ -101,4 +101,11 @@ dependencies {
 
     //Dexter
     implementation 'com.karumi:dexter:6.2.3'
+
+    implementation 'com.github.rajputmukesh748:MukeshOtpView:1.0.0'
+
+
+    // Lottie dependency
+    def lottieVersion = "3.4.4"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 }

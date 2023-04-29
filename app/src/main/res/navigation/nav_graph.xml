@@ -15,5 +15,55 @@
     <fragment
         android:id="@+id/landingFragment"
         android:name="com.bipin.shopy.views.landingPage.LandingFragment"
-        android:label="LandingFragment" />
+        android:label="LandingFragment" >
+        <action
+            android:id="@+id/action_landingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_landingFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.bipin.shopy.views.signup.SignupFragment"
+        android:label="SignupFragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bipin.shopy.views.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.bipin.shopy.views.forgotPassword.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.bipin.shopy.views.otpverification.OtpVerificationFragment"
+        android:label="OtpVerificationFragment" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.bipin.shopy.views.newPassword.NewPasswordFragment"
+        android:label="NewPasswordFragment" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
