@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Shopy</string>
+
+    <string name="your_device_offline">You are offline.</string>
+    <string name="some_error_occured">An error has occurred</string>
+    <string name="session_expired">Session Expired!</string>
+    <string name="ok">OK</string>\
+
+    <string name="unexpected_error">Unexpected error</string>
+    <string name="take_image">Take Image</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="camera_permission_required">Camera and Storage permission is required to use this feature.</string>
+    <string name="location_permission_required">Location permission is required to use this feature</string>
+    <string name="storage_permission_required">Storage Permission is required to use this feature</string>
+    <string name="cancel">Cancel</string>
+</resources>
