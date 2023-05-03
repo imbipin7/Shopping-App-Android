@@ -35,5 +35,11 @@
     <string name="update">Update</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="password_reset_successful">Password reset \nsuccessful</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="enter_code_voucher">Enter code voucher</string>
 
 </resources>

@@ -23,6 +23,9 @@ class LoginVM @Inject constructor() : ViewModel() {
                 view.findNavController()
                     .navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
             }
+            R.id.btnSignIn -> {
+                view?.findNavController()?.navigate(R.id.action_loginFragment_to_home)
+            }
         }
     }
 }

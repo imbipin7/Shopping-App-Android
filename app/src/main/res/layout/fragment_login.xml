@@ -133,6 +133,7 @@
                     android:backgroundTintMode="add"
                     android:fontFamily="@font/montserrat_bold"
                     android:paddingVertical="@dimen/_12sdp"
+                    android:onClick="@{vm::onClick}"
                     android:text="@string/sign_in"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

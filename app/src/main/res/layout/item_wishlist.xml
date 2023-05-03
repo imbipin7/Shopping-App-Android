@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/round_corners"
+        android:padding="@dimen/_5sdp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivItem"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/otp_round_corners"
+            android:src="@drawable/iv_shoe1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_semibold"
+            android:maxLines="1"
+            android:text="Nike Air Max 270"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toTopOf="@id/ivItem" />
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="1"
+            android:text="$112.00"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toBottomOf="@id/tvItemName" />
+
+        <TextView
+            android:id="@+id/tvMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:text="-"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toBottomOf="@id/tvItemPrice" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_corners"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="1"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:text="3"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toEndOf="@id/tvMinus"
+            app:layout_constraintTop_toBottomOf="@id/tvItemPrice" />
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:text="+"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toEndOf="@id/tvCount"
+            app:layout_constraintTop_toBottomOf="@id/tvItemPrice" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

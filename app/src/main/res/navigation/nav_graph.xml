@@ -47,6 +47,9 @@
             android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
             app:destination="@id/forgotPasswordFragment"
             app:enterAnim="@anim/enter" />
+        <action
+            android:id="@+id/action_loginFragment_to_home"
+            app:destination="@id/home" />
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
@@ -75,4 +78,20 @@
             app:destination="@id/loginFragment"
             app:enterAnim="@anim/enter" />
     </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.bipin.shopy.views.home.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/wishlist"
+        android:name="com.bipin.shopy.views.wishlist.WishlistFragment"
+        android:label="WishlistFragment" />
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.bipin.shopy.views.cart.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/myAccount"
+        android:name="com.bipin.shopy.views.myAccount.MyAccountFragment"
+        android:label="MyAccountFragment" />
 </navigation>
