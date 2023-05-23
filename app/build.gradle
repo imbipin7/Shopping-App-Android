@@ -108,4 +108,7 @@ dependencies {
     // Lottie dependency
     def lottieVersion = "3.4.4"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
 }

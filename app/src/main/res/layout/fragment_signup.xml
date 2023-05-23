@@ -79,7 +79,10 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/bg_edit_text"
                     android:fontFamily="@font/montserrat_medium"
-                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                     android:paddingHorizontal="@dimen/_10sdp"
                     android:paddingVertical="@dimen/_15sdp"
                     android:textSize="@dimen/_12sdp"
                     app:layout_constraintTop_toBottomOf="@id/tvName" />
@@ -103,8 +106,10 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/bg_edit_text"
                     android:fontFamily="@font/montserrat_medium"
+                    android:imeOptions="actionNext"
                     android:paddingHorizontal="@dimen/_10sdp"
                     android:paddingVertical="@dimen/_15sdp"
+                    android:singleLine="true"
                     android:textSize="@dimen/_12sdp"
                     app:layout_constraintTop_toBottomOf="@id/tvEmail" />
 
@@ -127,7 +132,9 @@
                     android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/bg_edit_text"
                     android:fontFamily="@font/montserrat_medium"
+                    android:imeOptions="actionDone"
                     android:inputType="textPassword"
+                    android:maxLines="1"
                     android:paddingHorizontal="@dimen/_10sdp"
                     android:paddingVertical="@dimen/_15sdp"
                     android:textSize="@dimen/_12sdp"

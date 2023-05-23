@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.bipin.shopy.model.Products" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivItem"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_shoe1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@{model.tag}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toTopOf="@id/ivItem"
+            tools:text="Popular" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@{model.name}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toBottomOf="@id/tvTag"
+            tools:text="Air Max 2090" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuyNow"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="@string/buy_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/ivItem"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

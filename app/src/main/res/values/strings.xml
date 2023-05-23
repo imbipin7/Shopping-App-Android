@@ -41,5 +41,18 @@
     <string name="cart">Cart</string>
     <string name="checkout">Checkout</string>
     <string name="enter_code_voucher">Enter code voucher</string>
+    <string name="my_account">My Account</string>
+
+    <!--My Account Strings-->
+    <string name="account_details">Account details</string>
+    <string name="cards_offers">Card &amp; offers</string>
+    <string name="notifications">Notifications</string>
+    <string name="delivery_information">Delivery information</string>
+    <string name="payment_info">Payment information</string>
+    <string name="language">Language</string>
+    <string name="privacy_settings">Privacy settings</string>
+    <string name="logout">Logout</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="view_all">View all</string>
 
 </resources>
